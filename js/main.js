@@ -17,7 +17,7 @@
   }else{
     var io=new IntersectionObserver(function(en,ob){
       en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("is-in");ob.unobserve(x.target);}});
-    },{rootMargin:"0px 0px -10% 0px",threshold:.1});
+    },{rootMargin:"80px 0px 80px 0px",threshold:0});
     for(var j=0;j<els.length;j++)io.observe(els[j]);
   }
 
